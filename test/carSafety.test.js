@@ -5,7 +5,7 @@ describe ("car-safety/a-million-more test", function(){
     it ("Verify page title",async function(){
         browser.url('https://www.volvocars.com/intl/v/car-safety/a-million-more')
         browser.maximizeWindow()
-        await carSafety.AcceptCookies()
+        //await carSafety.AcceptCookies()
         assert.equal("A million more | Volvo Cars - International", browser.getTitle(), "Browser title not matching")    
     })
 
