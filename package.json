@@ -1,0 +1,28 @@
+{
+  "name": "volvo",
+  "version": "1.0.0",
+  "description": "Volvo Test Suite",
+  "main": "index.js",
+  "scripts": {
+    "test-local": "./node_modules/.bin/wdio ./wdio.conf.js",
+    "test-docker": "./node_modules/.bin/wdio ./wdio-docker.conf.js"
+  },
+  "author": "Harish",
+  "license": "ISC",
+  "devDependencies": {
+    "@rpii/wdio-html-reporter": "^6.3.1",
+    "@wdio/allure-reporter": "^7.13.0",
+    "@wdio/cli": "^7.13.0",
+    "@wdio/local-runner": "^7.13.0",
+    "@wdio/mocha-framework": "^7.13.0",
+    "@wdio/spec-reporter": "^7.13.0",
+    "chai": "^4.0.1",
+    "chai-webdriverio": "^1.0.0",
+    "chromedriver": "^93.0.1",
+    "local-runner": "^0.1.1-alpha",
+    "wdio-docker-service": "^3.2.1",
+    "webdriverio": "^8.3.3",
+    "wdio-chromedriver-service": "^8.1.1"
+  },
+  "dependencies": {}
+}
