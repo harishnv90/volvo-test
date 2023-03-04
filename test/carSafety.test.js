@@ -1,16 +1,16 @@
 const { assert } = require("chai");
 const carSafety = require("../pages/carSafety.page")
 
-describe ("car-safety/a-million-more test", function(){
+describe ("Car safety test", function(){
     it ("Verify page title",async function(){
         browser.url('/intl/v/car-safety/a-million-more')
-        console.log("**************************"+browser.getTitle())
+        console.log("**************************"+await browser.getTitle())
         browser.maximizeWindow()
-        console.log("**************************"+browser.getTitle())
+        console.log("**************************"+await browser.getTitle())
         await carSafety.AcceptCookies()
-        console.log("**************************"+browser.getTitle())
-        assert.equal("A million more | Volvo Cars - International", browser.getTitle(), "Browser title not matching") 
-        console.log("**************************"+browser.getTitle())
+        console.log("**************************"+await browser.getTitle())
+        assert.equal("A million more | Volvo Cars - International",await browser.getTitle(), "Browser title not matching") 
+        console.log("**************************"+await browser.getTitle())
     })
 
 //     it ("Verify presence of Menu link on the home page",async function(){
