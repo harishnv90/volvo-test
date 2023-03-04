@@ -13,15 +13,15 @@ describe ("Car safety test", function(){
         assert.equal(true,await carSafety.ismenuExist(), "Menu link does not exist on the homepage")
     })
 
-//     it ("Verify presence of various items under Menu",async function(){
-//         await carSafety.clickMenu()
-//         assert.equal(true,await carSafety.isbuyOptionExist(), "Buy item does not exist under Menu")
-//         assert.equal(true,await carSafety.isownOptionExist(), "Own item does not exist under Menu")
-//         assert.equal(true,await carSafety.isaboutVolvoOptionExist(), "About Volvo item does not exist under Menu")    
-//         assert.equal(true,await carSafety.isexploreOptionExist(), "Explore item does not exist under Menu")
-//         assert.equal(true,await carSafety.ismoreOptionExist(), "More item does not exist under Menu")
-//         assert.equal(true,await carSafety.isinternationalOptionExist(), "International item does not exist under Menu")
-//     })
+    it ("Verify presence of various items under Menu",async function(){
+        await carSafety.clickMenu()
+        assert.equal(true,await carSafety.isbuyOptionExist(), "Buy item does not exist under Menu")
+        assert.equal(true,await carSafety.isownOptionExist(), "Own item does not exist under Menu")
+        assert.equal(true,await carSafety.isaboutVolvoOptionExist(), "About Volvo item does not exist under Menu")    
+        assert.equal(true,await carSafety.isexploreOptionExist(), "Explore item does not exist under Menu")
+        assert.equal(true,await carSafety.ismoreOptionExist(), "More item does not exist under Menu")
+        assert.equal(true,await carSafety.isinternationalOptionExist(), "International item does not exist under Menu")
+    })
 
     // it ("Verify presence of cars span", function(){
     //     assert.equal(true,carSafety.isCarsSpanExist(), "Car span not exist")         
