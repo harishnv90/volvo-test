@@ -12,7 +12,6 @@ class CarSafety{
     get explore() {return $('//em[text()="Explore"]')}
     get more() {return $('//em[text()="More"]')}
     get international() {return $('//p[text()="International"]')}
-    get exploreOurModelsHeading() {return $('//h2[text()="Explore our models"]')}
     
     //actions
     async ismenuExist() {return elementutil.doIsDisplayed(this.menu)}
@@ -31,7 +30,6 @@ class CarSafety{
     async isexploreOptionExist() {return elementutil.doIsDisplayed(this.explore)}
     async ismoreOptionExist() {return elementutil.doIsDisplayed(this.more)}
     async isinternationalOptionExist() {return elementutil.doIsDisplayed(this.international)}
-    async isexploreOurModelsHeadingExist() {return elementutil.doIsDisplayed(this.exploreOurModelsHeading)}
 
     async AcceptCookies(){
         await elementutil.doClick(this.cookies)
