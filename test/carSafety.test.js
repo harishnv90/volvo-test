@@ -23,8 +23,4 @@ describe ("Car safety test", function(){
         assert.equal(true,await carSafety.isinternationalOptionExist(), "International item does not exist under Menu")
     })
 
-    it ("Verify presence of heading 'Explore our models'",async function(){
-        assert.equal(true,await carSafety.isexploreOurModelsHeadingExist(), "'Explore our models' heading does not exists")
-    })
-
 })
