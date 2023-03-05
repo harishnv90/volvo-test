@@ -54,5 +54,5 @@ jobs:
           context: 'Test report'
           description: 'report generation'
           state: 'success'
-          sha: ${{ github.event.workflow_run.head_sha }}
+          sha: ${{ github.event.push.head.sha }}
           target_url: simple-elf.github.io/github-allure-history/${{ github.run_number }}
