@@ -24,6 +24,7 @@ jobs:
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
+        working-directory: testautomation
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
         
@@ -41,4 +42,4 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: my-artifact
-        path: /allure-report
+        path: testautomation/allure-report
