@@ -28,7 +28,7 @@ jobs:
       run: npm uninstall fibers && rm package-lock.json && rm -R node_modules && npm install
     - name: Start selenium docker grid set up
       run:  docker-compose -f "docker-compose.yml" up -d --build
-    - name: sleep for 10 seconds
+    - name: Sleep for 10 seconds
       uses: whatnick/wait-action@master
       with:
        time: "10s"
