@@ -2,6 +2,7 @@
 
 URL under test: https://www.volvocars.com/intl/v/car-safety/a-million-more/
 \
+\
 Folders:\
 1.test- contains test scripts written using Mocha framework and Chai assertions\
 2.page- contains page objects: element locators and actions\
