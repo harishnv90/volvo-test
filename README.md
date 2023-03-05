@@ -7,5 +7,5 @@ Folders:\
 Files:\
 4.package.json- contains packages to run the test scripts\
 5.wdio.conf.js- config file to run scripts on local machine\
-6.wdio-docker.conf- config file to run scripts on Selenium grid using docker\
+6.wdio-docker.conf- config file to run scripts on Selenium grid using docker
 
