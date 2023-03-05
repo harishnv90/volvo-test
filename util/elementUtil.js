@@ -1,17 +1,17 @@
 class ElementUtil{
 
     async doClick(element){
-       await element.waitForDisplayed()
-       await element.click()
+        await element.waitForDisplayed()
+        await element.click()
     }
 
-    doSetValue(element, value){
-        element.waitForDisplayed()
-        element.setValue(value)
+    async doSetValue(element, value){
+        await element.waitForDisplayed()
+        await element.setValue(value)
     }
 
-    doGetText(element){
-        element.waitForDisplayed()
+    async doGetText(element){
+        await element.waitForDisplayed()
         return element.getText()
     }
 
@@ -20,43 +20,43 @@ class ElementUtil{
         return element.isDisplayed()
     }
 
-    doIsSelected(element){
-        element.waitForDisplayed()
+    async doIsSelected(element){
+        await element.waitForDisplayed()
         return element.isSelected()
     }
 
-    doIsEnabled(element){
-        element.waitForDisplayed()
+    async doIsEnabled(element){
+        await element.waitForDisplayed()
         return element.isEnabled()
     }
 
-    doIsClickable(element){
-        element.waitForDisplayed()
+    async doIsClickable(element){
+        await element.waitForDisplayed()
         return element.isClickable()
     }
 
-    doIsExisting(element){
+    async doIsExisting(element){
         return element.isExisting()
     }
 
-    doGetPageTitle(){
+    async doGetPageTitle(){
         return browser.getTitle()
     }
 
-    doGetAttribute(element, attributename){
+    async doGetAttribute(element, attributename){
         return element.getAttribute(attributename)
     }
 
-    doGetText(element){
+    async doGetText(element){
         return element.getText()
     }
 
-    doGetElementCount(element){
+    async doGetElementCount(element){
         return element.length
     }
 
-    doClearTextField(element){
-        element.clearValue()
+    async doClearTextField(element){
+        await element.clearValue()
     }
 }
 
