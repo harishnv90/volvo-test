@@ -22,7 +22,8 @@
     "local-runner": "^0.1.1-alpha",
     "wdio-docker-service": "^3.2.1",
     "webdriverio": "^8.3.3",
-    "wdio-chromedriver-service": "^8.1.1"
+    "wdio-chromedriver-service": "^8.1.1",
+    "wdio-image-comparison-service": "^5.0.2"
   },
   "dependencies": {}
 }
