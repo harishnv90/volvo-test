@@ -4,11 +4,8 @@
 name: Volvo test execution
 
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
+  workflow_dispatch:
+  
 jobs:
   build:
 
